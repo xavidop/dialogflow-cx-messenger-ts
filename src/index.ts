@@ -5,7 +5,7 @@ import {google} from "@google-cloud/dialogflow-cx/build/protos/protos";
 /**
  * Represents rich content that can be sent in a response.
  */
-export class RichContent implements google.protobuf.IStruct {
+export class RichContent implements google.protobuf.IStruct, IRichContent {
   richContent?: Array<RichContentElement[]>;
   /** Struct fields */
   fields?: ({ [k: string]: google.protobuf.IValue }|null);
@@ -29,10 +29,14 @@ export class RichContent implements google.protobuf.IStruct {
   }
 }
 
+export interface IRichContent {
+  richContent?: Array<RichContentElement[]>;
+}
+
 /**
  * Represents a single element of rich content that can be sent in a response.
  */
-export class RichContentElement {
+export class RichContentElement implements IRichContentElement {
   /**
    * The type of the rich content element.
    */
@@ -175,11 +179,86 @@ export class RichContentElement {
   }
 }
 
+/**
+ * Represents a single element of rich content that can be sent in a response.
+ */
+export interface IRichContentElement {
+  /**
+   * The type of the rich content element.
+   */
+  type?: string;
+
+  /**
+   * The title of the rich content element.
+   */
+  title?: string;
+
+  /**
+   * The subtitle of the rich content element.
+   */
+  subtitle?: string;
+
+  /**
+   * The image of the rich content element.
+   */
+  image?: Image;
+
+  /**
+   * The anchor of the rich content element.
+   */
+  anchor?: Anchor;
+
+  /**
+   * The text of the rich content element.
+   */
+  text?: Text;
+
+  /**
+   * The raw URL of the rich content element.
+   */
+  rawUrl?: string;
+
+  /**
+   * The accessibility text of the rich content element.
+   */
+  accessibilityText?: string;
+
+  /**
+   * The icon of the rich content element.
+   */
+  icon?: Icon;
+
+  /**
+   * The mode of the rich content element.
+   */
+  mode?: string;
+
+  /**
+   * The event of the rich content element.
+   */
+  event?: Event;
+
+  /**
+   * The options of the rich content element.
+   */
+  options?: Option[];
+
+  /**
+   * The citations of the rich content element.
+   */
+  citations?: Citation[];
+
+  /**
+   * The HTML of the rich content element.
+   */
+  html?: string;
+}
+
 
 /**
  * Represents an icon.
  */
-export class Icon {
+export class Icon implements IIcon {
   /**
      * The type of the icon.
      */
@@ -210,10 +289,21 @@ export class Icon {
   }
 }
 
+export interface IIcon {
+  /**
+     * The type of the icon.
+     */
+  type?: string;
+  /**
+     * The color of the icon.
+     */
+  color?: string;
+}
+
 /**
  * Represents an anchor.
  */
-export class Anchor {
+export class Anchor implements IAnchor {
   /**
      * The URL of the resource.
      */
@@ -236,6 +326,16 @@ export class Anchor {
       href: this.href,
     };
   }
+}
+
+/**
+ * Represents an anchor.
+ */
+export interface IAnchor {
+  /**
+     * The URL of the resource.
+     */
+  href?: string;
 }
 
 /**
@@ -271,7 +371,7 @@ export type Text = string[] | string;
 /**
  * Represents a citation.
  */
-export class Citation {
+export class Citation implements ICitation {
   title?: string;
   subtitle?: string;
   anchor?: Anchor;
@@ -301,10 +401,16 @@ export class Citation {
   }
 }
 
+export interface ICitation {
+  title?: string;
+  subtitle?: string;
+  anchor?: Anchor;
+}
+
 /**
  * Represents an event.
  */
-export class Event {
+export class Event implements IEvent {
   /**
      * The event of the resource.
      */
@@ -329,10 +435,17 @@ export class Event {
   }
 }
 
+export interface IEvent {
+  /**
+     * The event of the resource.
+     */
+  event?: string;
+}
+
 /**
  * Represents an option.
  */
-export class Option {
+export class Option implements IOption {
   mode?: string;
   text?: string;
   image?: Image;
@@ -366,4 +479,9 @@ export class Option {
   }
 }
 
-
+export interface IOption {
+  mode?: string;
+  text?: string;
+  image?: Image;
+  anchor?: Anchor;
+}
