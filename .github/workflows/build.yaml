@@ -1,0 +1,33 @@
+name: yarn-build
+on:
+  push:
+    tags:
+      - v*
+    branches:
+      - master
+  pull_request:
+permissions:
+  contents: read
+
+jobs:
+  yarnci:
+    permissions:
+      contents: read  # for actions/checkout to fetch code
+      pull-requests: read # for actions/github-script to get PR info
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: lts/*
+      - name: install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install --frozen-lockfile
+      - name: build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build

@@ -18,13 +18,12 @@ jobs:
     name: release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
-      - uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          cache: npm
+          cache: yarn
           node-version: lts/*
-      - run: npm clean-install
-      - run: npm audit signatures
+      - run: yarn build
       # pinned version updated automatically by Renovate.
       # details at https://semantic-release.gitbook.io/semantic-release/usage/installation#global-installation
       - run: npx semantic-release@21.0.2
