@@ -2,7 +2,7 @@ name: "codeql"
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   analyze:
