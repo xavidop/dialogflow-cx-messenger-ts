@@ -1,6 +1,18 @@
 # Typescript Types for Dialogflow CX Messenger Integration
 
-Typescript classes and types to use Dialogflow Messenger Types in Typescript.
+<p align="center">
+  <a href="https://github.com/xavidop/dialogflow-cx-messenger-ts/actions/workflows/release.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/xavidop/dialogflow-cx-messenger-ts/release.yml?logo=github&logoColor=fff&label=Github" alt="CI status" />
+  </a>&nbsp;
+  <a href="https://www.npmjs.com/dialogflow-cx-messenger-ts">
+    <img src="https://img.shields.io/npm/v/dialogflow-cx-messenger-ts.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen" alt="Stats on npm" />
+  </a>&nbsp;
+  <a href="https://xavidop.github.io/dialogflow-cx-messenger-ts/">
+    <img src="https://img.shields.io/badge/read-docs-limegreen?logo=readme" alt="Docs" />
+  </a>
+</p>
+
+Typescript classes and types to use Dialogflow Messenger Integration in Typescript.
 
 ## Installation
 
@@ -27,7 +39,7 @@ Then you can use it to create a response:
   const content = new dfcxmessenger.RichContent();
   const richContentElement = new dfcxmessenger.RichContentElement();
   richContentElement.type = "image";
-  richContentElement.rawUrl = sprite;
+  richContentElement.rawUrl = "https://example.com/images/logo.png";
   richContentElement.accessibilityText = "Example logo";
   content.richContent = [[richContentElement]];
 
