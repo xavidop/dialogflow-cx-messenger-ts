@@ -12,7 +12,7 @@
   </a>
 </p>
 
-Typescript classes and types to use Dialogflow Messenger Integration in Typescript.
+Typescript classes and types to use Dialogflow Messenger Integration in Typescript. Please check the Official Dialogflow CX Messenger Integration [documentation](https://cloud.google.com/dialogflow/cx/docs/concept/integration/dialogflow-messenger#fulfillment) for more information.
 
 ## Installation
 
