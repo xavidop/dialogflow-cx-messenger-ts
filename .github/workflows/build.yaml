@@ -17,12 +17,12 @@ jobs:
     name: lint
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           cache: yarn
           node-version: lts/*
-      - uses: actions/checkout@v4
       - name: install
         uses: borales/actions-yarn@v4
         with:
