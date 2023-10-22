@@ -23,6 +23,10 @@ jobs:
         with:
           cache: yarn
           node-version: lts/*
+      - name: install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install --frozen-lockfile
       - run: yarn build
       # pinned version updated automatically by Renovate.
       # details at https://semantic-release.gitbook.io/semantic-release/usage/installation#global-installation
