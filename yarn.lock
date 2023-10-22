@@ -39,10 +39,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.51.0.tgz#6d419c240cfb2b66da37df230f7e7eef801c32fa"
   integrity sha512-HxjQ8Qn+4SI3/AFv6sOrDB+g6PpUTDwSJiQqOrnneEk8L71161srI9gjzzZvYVbzHiVg/BvcH95+cK/zfIt4pg==
 
-"@google-cloud/dialogflow-cx@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/dialogflow-cx/-/dialogflow-cx-4.1.0.tgz#2eee3f6a32103af71c26c89ba7454e1fd6ea7a6b"
-  integrity sha512-ClUDJUeQ8HhAYNWVg+wrDUch0XEKPecxEtLQai/h+GLcVEJaR3pNxpSnVJAJbsSqiEvwwAeTWZKcxK8tA96GOQ==
+"@google-cloud/dialogflow-cx@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@google-cloud/dialogflow-cx/-/dialogflow-cx-4.2.0.tgz#471f74244c416bcf92daf893608acc94c7d0cc48"
+  integrity sha512-oeuTPjBMCkhv+6gxlUh3dZKcRGOJtKbMK+4eKWnQDV17gCyettVu1FUiV/ri4BHFFm0cD12GADGXrOI2qMGZIw==
   dependencies:
     google-gax "^4.0.3"
 
