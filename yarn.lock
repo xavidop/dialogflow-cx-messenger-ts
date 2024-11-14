@@ -40,9 +40,9 @@
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
 "@google-cloud/dialogflow-cx@^4.8.0":
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/dialogflow-cx/-/dialogflow-cx-4.8.0.tgz#ffa5ac12216a80018fad09580a88e9f46754f550"
-  integrity sha512-puzgNe6xX3xxQ8hnxMKnqmqOFQZcq9o5zUCJvTQLn8Tku4DXIqHiWf5u+E08Ce6+VwGhJBIIZrh3zMg/5II1wQ==
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/@google-cloud/dialogflow-cx/-/dialogflow-cx-4.9.0.tgz#bc43874afc4782a4a6cdf7f70630603d2edb06d9"
+  integrity sha512-N36lHpSvvbG98Wsn6og0nWu+jaigyXtEbKr5nJzOQnWChGxIsUPt9E8vFatb/pca01ySHLkNIe/QZMVl4swXyw==
   dependencies:
     google-gax "^4.0.3"
 
