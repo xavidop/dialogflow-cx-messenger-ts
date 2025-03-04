@@ -49,9 +49,9 @@
     "@shikijs/vscode-textmate" "^9.3.0"
 
 "@google-cloud/dialogflow-cx@^4.8.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/dialogflow-cx/-/dialogflow-cx-4.9.0.tgz#bc43874afc4782a4a6cdf7f70630603d2edb06d9"
-  integrity sha512-N36lHpSvvbG98Wsn6og0nWu+jaigyXtEbKr5nJzOQnWChGxIsUPt9E8vFatb/pca01ySHLkNIe/QZMVl4swXyw==
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/@google-cloud/dialogflow-cx/-/dialogflow-cx-4.10.0.tgz#3dd0cd6aaa70bb4f1eaf66429e77836736ae90f5"
+  integrity sha512-kA6nf/9ViMzw5sP9Dk6pO31VxixyO0HiqTWkP2uefUUz6XSVd+ad7jUzNjNiQVncowfNuIASf3NKQSlzep/LiA==
   dependencies:
     google-gax "^4.0.3"
 
