@@ -26,6 +26,6 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.25.4",
     "typedoc": "^0.28.0",
-    "typescript": "^5.2.0"
+    "typescript": "^6.0.2"
   }
 }
